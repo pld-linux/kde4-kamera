@@ -11,21 +11,21 @@ Group:		X11/Applications/Graphics
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{name}-%{version}.tar.bz2
 # Source0-md5:	f102af88e51fbf489dc1e70cf57d5645
 URL:		http://www.kde.org/
-BuildRequires:  Qt3Support-devel >= %{qtver}
-BuildRequires:  QtCore-devel >= %{qtver}
+BuildRequires:	Qt3Support-devel >= %{qtver}
+BuildRequires:	QtCore-devel >= %{qtver}
 BuildRequires:	automoc4 >= 0.9.88
 BuildRequires:	cmake >= 2.8.0
 BuildRequires:	kde4-kdelibs-devel >= %{version}
 BuildRequires:	libgphoto2-devel
+BuildRequires:	libstdc++-devel
 BuildRequires:	perl
 BuildRequires:	qt4-build >= %{qtver}
 BuildRequires:	qt4-qmake >= %{qtver}
 BuildRequires:	rpmbuild(macros) >= 1.600
 BuildRequires:	xorg-lib-libX11-devel
-BuildRequires:  libstdc++-devel
+Requires:	kde4-kdebase >= %{version}
 Obsoletes:	kde4-kdegraphics-kamera
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-Requires:	kde4-kdebase >= %{version}
 
 %description
 kamera is an IO slave and a KControl panel module which allows you to
