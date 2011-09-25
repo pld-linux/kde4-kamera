@@ -5,7 +5,7 @@ Summary:	K Desktop Environment - Digital camera support
 Summary(pl.UTF-8):	K Desktop Environment - Obs≈<82>uga kamer cyfrowych
 Name:		kamera
 Version:	4.7.1
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications/Graphics
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{name}-%{version}.tar.bz2
@@ -24,7 +24,7 @@ BuildRequires:	qt4-qmake >= %{qtver}
 BuildRequires:	rpmbuild(macros) >= 1.600
 BuildRequires:	xorg-lib-libX11-devel
 Requires:	kde4-kdebase >= %{version}
-Obsoletes:	kde4-kdegraphics-kamera < 4.7.0
+Obsoletes:	kde4-kdegraphics-kamera < 4.6.99
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
