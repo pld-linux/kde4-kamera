@@ -2,7 +2,7 @@
 %define		qtver		4.7.4
 
 Summary:	K Desktop Environment - Digital camera support
-Summary(pl.UTF-8):	K Desktop Environment - Obs≈<82>uga kamer cyfrowych
+Summary(pl.UTF-8):	K Desktop Environment - Obs≈Çuga kamer cyfrowych
 Name:		kamera
 Version:	4.7.1
 Release:	2
