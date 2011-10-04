@@ -4,12 +4,12 @@
 Summary:	K Desktop Environment - Digital camera support
 Summary(pl.UTF-8):	K Desktop Environment - Obsługa kamer cyfrowych
 Name:		kamera
-Version:	4.7.1
-Release:	2
+Version:	4.7.2
+Release:	1
 License:	GPL
 Group:		X11/Applications/Graphics
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{name}-%{version}.tar.bz2
-# Source0-md5:	4f5669536561f1125f9fc3f12c501fd8
+# Source0-md5:	aa73158bceaa64a76faef9a0dda74d6a
 URL:		http://www.kde.org/
 BuildRequires:	Qt3Support-devel >= %{qtver}
 BuildRequires:	QtCore-devel >= %{qtver}
