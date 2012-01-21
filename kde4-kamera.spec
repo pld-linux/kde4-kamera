@@ -1,14 +1,15 @@
 %define		_state		stable
+%define		orgname		kamera
 %define		qtver		4.8.0
 
 Summary:	K Desktop Environment - Digital camera support
 Summary(pl.UTF-8):	K Desktop Environment - Obsługa kamer cyfrowych
-Name:		kamera
+Name:		kde4-kamera
 Version:	4.8.0
 Release:	1
 License:	GPL
 Group:		X11/Applications/Graphics
-Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{name}-%{version}.tar.bz2
+Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.bz2
 # Source0-md5:	2d7340b1215c24d1e98875c5eea4d54d
 URL:		http://www.kde.org/
 BuildRequires:	Qt3Support-devel >= %{qtver}
@@ -25,6 +26,7 @@ BuildRequires:	rpmbuild(macros) >= 1.600
 BuildRequires:	xorg-lib-libX11-devel
 Requires:	kde4-kdebase >= %{version}
 Obsoletes:	kde4-kdegraphics-kamera < 4.6.99
+Obsoletes:	kamera < 4.8.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -44,7 +46,7 @@ aparatu z listy w KControl, a następnie odwoływać się do zawartości
 aparatu przez URL kamera:/.
 
 %prep
-%setup -q
+%setup -q -n %{orgname}-%{version}
 
 %build
 install -d build
